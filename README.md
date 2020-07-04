@@ -5,7 +5,7 @@ Home: https://github.com/casperdcl/git-fame
 
 Package license: MPL-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Pretty-print git repository collaborators sorted by contributions
 
