@@ -20,8 +20,10 @@ requirements:
   host:
     - python
     - pip
+    - setuptools_scm
   run:
     - python
+    - setuptools_scm
     - argopt >=0.3.5
     - tabulate
 
