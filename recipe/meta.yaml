@@ -1,5 +1,5 @@
 {% set name = "git-fame" %}
-{% set version = "1.15.0" %}
+{% set version = "1.15.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 00e7205cb885f486ec57bef2cf2b9d97a683b86563756557685f85ecfb907074
+  sha256: 371aa8e8582107bbc7f7c47a2e980cc82fa4bba508cecceba320d3ee13b287ed
 
 build:
   noarch: python
