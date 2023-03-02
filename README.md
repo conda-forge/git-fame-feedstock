@@ -1,11 +1,11 @@
-About git-fame
-==============
+About git-fame-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/git-fame-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/casperdcl/git-fame
 
 Package license: MPL-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/git-fame-feedstock/blob/main/LICENSE.txt)
 
 Summary: Pretty-print git repository collaborators sorted by contributions
 
