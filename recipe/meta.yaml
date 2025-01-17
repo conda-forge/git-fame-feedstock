@@ -6,30 +6,32 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: be72b64af451d887099339848fe310e686f2bd472bbde7e4fc338825c364bf2d
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - git-fame = gitfame:main
 
 requirements:
   host:
-    - python >=2.7
+    - python {{ python_min }}
     - pip
     - setuptools_scm >=3.4
     - toml
   run:
-    - python >=2.7
+    - python >={{ python_min }}
     - setuptools
     - argopt >=0.3.5
     - tabulate
     - tqdm >=4.44.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - gitfame
   commands:
