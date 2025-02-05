@@ -1,13 +1,13 @@
 {% set name = "git-fame" %}
-{% set version = "2.0.2" %}
+{% set version = "2.1.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: be72b64af451d887099339848fe310e686f2bd472bbde7e4fc338825c364bf2d
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 5e3cbb5d0de80c55c0d07d629f0495bd1eae63b4438787038d0863ea43a3e91e
 
 build:
   noarch: python
