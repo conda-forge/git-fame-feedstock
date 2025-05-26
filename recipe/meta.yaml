@@ -1,5 +1,6 @@
 {% set name = "git-fame" %}
 {% set version = "2.2.0" %}
+{% set python_min = "3.7" %}
 
 package:
   name: {{ name|lower }}
@@ -11,19 +12,20 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - git-fame = gitfame:main
 
 requirements:
   host:
-    - python >=2.7
+    - python {{ python_min }}
     - pip
+    - setuptools
     - setuptools_scm >=3.4
     - toml
   run:
-    - python >=2.7
+    - python >={{ python_min }}
     - setuptools
     - argopt >=0.3.5
     - tabulate
@@ -35,6 +37,8 @@ test:
   commands:
     - git-fame -v
     - git-fame -h
+  requires:
+    - python {{ python_min }}
 
 about:
   home: https://github.com/casperdcl/git-fame
