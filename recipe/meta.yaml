@@ -1,5 +1,5 @@
 {% set name = "git-fame" %}
-{% set version = "2.2.0" %}
+{% set version = "2.2.1" %}
 {% set python_min = "3.7" %}
 
 package:
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: d7a85579f07aedbb13bbc2ad6a1a9d605422bf84cabe656c768945a0e1a2ba29
+  sha256: bce7c753a73de304022638a59aafb662132be3bb5411ebbfbfcc5217ad4bb027
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - git-fame = gitfame:main
