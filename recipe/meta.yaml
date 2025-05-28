@@ -1,6 +1,6 @@
 {% set name = "git-fame" %}
-{% set version = "2.2.1" %}
-{% set python_min = "3.7" %}
+{% set version = "3.0.0" %}
+{% set python_min = "3.8" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: bce7c753a73de304022638a59aafb662132be3bb5411ebbfbfcc5217ad4bb027
+  sha256: 0efe8954693ccb6be221c4bb5989b700e18fbe1fb485033578b9ac2e629c81e1
 
 build:
   noarch: python
