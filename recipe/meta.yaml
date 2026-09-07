@@ -1,5 +1,5 @@
 {% set name = "git-fame" %}
-{% set version = "4.2.0" %}
+{% set version = "4.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 769092907d9d9b8deb75f14c2263903b00aa30c6865ed5d98a8029aa39bed069
+  sha256: 4d37124614c5263ab42d95a43ba167705773ef01a5ed369641257a0d1f96b298
 
 build:
   noarch: python
